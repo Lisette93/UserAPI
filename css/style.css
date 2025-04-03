@@ -1,0 +1,78 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url(/images/user-3331258_1280.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+}
+
+header {
+    background-color: #4497f5;
+    color: white;
+    text-align: center;
+  }
+
+h1{
+    padding:2rem;
+    text-align: center;
+}
+
+#user-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap:3rem 1rem;
+justify-content: center;
+padding: 2rem;
+margin-top:2rem;
+
+}
+
+.user-card {
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+width: calc(20% - 1rem);
+background: #4497f52d;
+text-align: center;
+padding: 1rem;
+border-radius: 8px;
+line-height: 1.6;
+}
+
+.user-card button {
+margin: 1rem;
+padding: 0.5rem 1rem;
+border: none;
+background-color: black;
+color:white;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.user-card button:hover {
+    background-color: #4497f5;
+  }
+
+  .extra-info { 
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display:none;
+  }
+
+  footer {
+    background-color: #4497f5;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+@media (max-width: 600px) {
+    .user-card {
+      width: 100%;
+    }
+  }
